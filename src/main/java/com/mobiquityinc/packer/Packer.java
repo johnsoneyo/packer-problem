@@ -21,6 +21,7 @@ import java.util.stream.Collectors;
  */
 public class Packer {
 
+    
     public static List<String> pack(String filePath) throws APIException {
 
         List<String> lines = Collections.emptyList();
@@ -85,7 +86,6 @@ public class Packer {
                 }
              
                 if (cases == null) {
-                    System.out.println("-");
                     result.add("-");
                 } else {
                    // imploring java 8's stream api to collect indexes found and join the result into a comma separated string 
